@@ -1,4 +1,5 @@
-# BitsoClient - Easy to use client integration with bitso.com
+# BitsoClient
+## Easy to use client integration with bitso.com
 
 Usage: 
 
