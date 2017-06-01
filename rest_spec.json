@@ -1,0 +1,164 @@
+{
+  "paths": [
+    {
+      "method": "POST",
+      "path": "phone_number"
+    },
+    {
+      "method": "POST",
+      "path": "phone_verification"
+    },
+    {
+      "method": "POST",
+      "path": "orders"
+    },
+    {
+      "method": "POST",
+      "path": "bitcoin_withdrawal"
+    },
+    {
+      "method": "POST",
+      "path": "ether_withdrawal"
+    },
+    {
+      "method": "POST",
+      "path": "spei_withdrawal"
+    },
+    {
+      "method": "POST",
+      "path": "debit_card_withdrawal"
+    },
+    {
+      "method": "POST",
+      "path": "phone_withdrawal"
+    },
+    {
+      "method": "POST",
+      "path": "transfer_quote"
+    },
+    {
+      "method": "POST",
+      "path": "transfer_create"
+    },
+    {
+      "method": "POST",
+      "path": "accounts"
+    },
+    {
+      "method": "POST",
+      "path": "webhooks"
+    },
+    {
+      "method": "DELETE",
+      "path": "orders/all"
+    },
+    {
+      "method": "GET",
+      "path": "available_books"
+    },
+    {
+      "method": "GET",
+      "path": "ticker"
+    },
+    {
+      "method": "GET",
+      "path": "order_book"
+    },
+    {
+      "method": "GET",
+      "path": "trades"
+    },
+    {
+      "method": "GET",
+      "path": "account_status"
+    },
+    {
+      "method": "GET",
+      "path": "kyc_documents"
+    },
+    {
+      "method": "GET",
+      "path": "balance"
+    },
+    {
+      "method": "GET",
+      "path": "fees"
+    },
+    {
+      "method": "GET",
+      "path": "ledger"
+    },
+    {
+      "method": "GET",
+      "path": "ledger/trades"
+    },
+    {
+      "method": "GET",
+      "path": "ledger/fees"
+    },
+    {
+      "method": "GET",
+      "path": "ledger/fundings"
+    },
+    {
+      "method": "GET",
+      "path": "ledger/withdrawals"
+    },
+    {
+      "method": "GET",
+      "path": "ledger/fees"
+    },
+    {
+      "method": "GET",
+      "path": "withdrawals"
+    },
+    {
+      "method": "GET",
+      "path": "withdrawals/:wid:"
+    },
+    {
+      "method": "GET",
+      "path": "fundings"
+    },
+    {
+      "method": "GET",
+      "path": "fundings/:fid:"
+    },
+    {
+      "method": "GET",
+      "path": "user_trades"
+    },
+    {
+      "method": "GET",
+      "path": "user_trades/:tid:"
+    },
+    {
+      "method": "GET",
+      "path": "order_trades/oid"
+    },
+    {
+      "method": "GET",
+      "path": "open_orders"
+    },
+    {
+      "method": "GET",
+      "path": "funding_destination"
+    },
+    {
+      "method": "GET",
+      "path": "mx_bank_codes"
+    },
+    {
+      "method": "GET",
+      "path": "account_required_fields"
+    },
+    {
+      "method": "GET",
+      "path": "orders/:oid:"
+    },
+    {
+      "method": "GET",
+      "path": "transfer/:transfer_id:"
+    }
+  ]
+}
