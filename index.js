@@ -38,7 +38,9 @@ module.exports = class BitsoClient {
                             case 'GET':
                             return request.get(request_path).query(params);
                         }
-                    })().set({Authorization: `Bitso ${key}:${nonce}:${crypto.createHmac('sha256', secret).update(Data).digest('hex')}`}).then(data=>success(data.body), error);
+                    })()
+                    .set({Authorization: `Bitso ${key}:${nonce}:${crypto.createHmac('sha256', secret).update(Data).digest('hex')}`})
+                    .then(data=>success(data.body), error);
                 }
             })
         })
