@@ -29,13 +29,14 @@ bitso.balance({
 Parameters are normalized as literal object:
 
 ```
-//GET https://api.bitso.com/v3/orders/
+//POST https://api.bitso.com/v3/orders/
 bitso.orders({
   params: {
     book: 'btc_mxn',
     side: 'buy',
     type: 'market'
   },
+  method: "POST",
   success: (data)=>console.log('data', data),
   error: (data)=>{
     console.log('error', data)
