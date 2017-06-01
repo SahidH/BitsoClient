@@ -4,7 +4,7 @@
  * 
  * https://bitso.com/api_info
  * 
- * GET (query) and POST, and even actions on paths are normalized into a single params literal object
+ * GET (query) POST and even parameters on paths are normalized into a single literal object
  */
 const request           = require('superagent');
 const rest_spec         = require('./rest_spec');
