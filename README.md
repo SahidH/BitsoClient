@@ -1,7 +1,8 @@
 # BitsoClient
-## Easy to use client integration with bitso.com
 
-Usage: 
+Easy to use client integration with bitso.com
+
+How to use:
 
 ```
 const BitsoClient = require('bitso-client');
