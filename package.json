@@ -1,10 +1,10 @@
 {
   "name": "bitso-client",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "",
   "main": "index.js",
   "repository" : { 
-    "type" : "git", "url" : "https://github.com/sahidhr/BitsoClient.git"
+    "type" : "git", "url" : "https://github.com/Omar-Hernandez/BitsoClient.git"
   },
   "author": "Sahid Hernandez",
   "license": "ISC",
