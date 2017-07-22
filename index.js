@@ -20,7 +20,7 @@ module.exports = class BitsoClient {
             Object.defineProperty(this, endpoint.path , {
                 enumerable: true,
                 configurable: true,
-                value: ({params, success, error, method})=>{
+                value: ({params, success, error, method}, cb)=>{
                     method = method||endpoint.method;
                     method = method.toUpperCase();
                     const name = Object.keys(params||{}).reduce((result, key)=>result.replace(`:${key}:`, params[key]), endpoint.path);
@@ -40,10 +40,19 @@ module.exports = class BitsoClient {
                         }
                     })()
                     .set({Authorization: `Bitso ${key}:${nonce}:${crypto.createHmac('sha256', secret).update(Data).digest('hex')}`})
-                    .then(data=>success(data.body), error);
+                    .end((err, data)=>{
+                        if(err){
+                            error && error(data.body)
+                            cb && cb(err, null)
+                            return;
+                        }
+                        
+                        success && success(data.body)
+                        cb && cb(null, err)
+                        return;
+                    });
                 }
             })
         })
     }    
 }
-

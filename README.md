@@ -2,6 +2,34 @@
 
 Easy to use client integration with bitso.com
 
+```
+const bitso = new BitsoClient({
+  key:      "KEY",
+  secret:   "SECRET"
+})
+
+@param {Object} options
+@param {string} options.key
+@param {string} response.secret
+```
+
+```
+bitso["path"](options, [, cb]);
+
+@param {Object} options
+@param {Object} options.params
+
+@callback options.success
+@param {data} response.body
+
+@callback options.error
+@param {data} response.body
+
+@callback cb
+@param {err}  response
+@param {data} response
+```
+
 How to use:
 
 ```
